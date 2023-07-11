@@ -1,0 +1,17 @@
+<p>login works!</p>
+
+<form class="">
+  <div class="email">
+    <label for="email">Email-id</label>
+    <input type="email" #email >
+  </div>
+  <div class="password">
+    <label for="password">Password</label>
+    <input type="password" #password>
+  </div>
+  <button (click)="sumit($event)" >Submit</button>
+</form>
+<div *ngIf="selected" class="answer">
+  Email-id = {{email.value}}
+  Password = {{password.value}}
+</div>
